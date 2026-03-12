@@ -1,0 +1,99 @@
+{
+  "nav": {
+    "carnes": "Nuestras carnes",
+    "menu": "El menú",
+    "historia": "Nuestra historia",
+    "eventos": "Eventos",
+    "prensa": "Prensa",
+    "delivery": "Delivery"
+  },
+  "hero": {
+    "title1": "EL TEMPLO DE",
+    "title2": "LA CARNE & EL VINO",
+    "subtitle": "La mítica esquina porteña de la gastronomía argentina",
+    "reserva": "Hacé tu reserva",
+    "anni1": "70 AÑOS",
+    "anni2": "DE PASIÓN CULINARIA",
+    "historia": "Nuestra historia"
+  },
+  "meatEvents": {
+    "carnesTitle": "NUESTRAS CARNES",
+    "carnesDesc": "Elegimos cuidadosamente cada corte que llega a tu mesa. Nuestro sommelier de carnes verifica en origen que cada corte cumpla con estrictos estándares de calidad, asegurando su trazabilidad en todo el proceso.",
+    "conocerMas": "Conocer más",
+    "eventosTitle": "EVENTOS",
+    "eventosDesc": "Nuestros espacios versátiles se adaptan a eventos corporativos y sociales, con propuestas diseñadas para cada ocasión.",
+    "verMas": "Ver más"
+  },
+  "social": {
+    "instagramTitle": "INSTAGRAM",
+    "verInstagram": "Ver Instagram",
+    "prensaTitle": "PRENSA",
+    "prensaQuote": "Estuve ya dos veces en ese espacio único, incomparable en el corazón de Palermo. Lo de Jesus fue en sus inicios, el siglo pasado un despacho de bebidas y almacén, como había tanto en el viejo Palermo borgeano.",
+    "prensaSource": "El Gourmet",
+    "verPrensa": "Ver prensa"
+  },
+  "footer": {
+    "address": "Lo de Jesús, Gurruchaga 1406",
+    "schedule": "Lunes a Domingo 12:00 pm - 01:00 am"
+  },
+  "carnes": {
+    "pageTitle": "NUESTRAS CARNES",
+    "heroDesc": "Elegimos con rigor cada corte que llega a tu mesa. Nuestro sommelier de carnes verifica en origen que cada pieza cumpla estándares exigentes de calidad y trazabilidad. La maduración en frío entre 15 y 21 días realza sabor y terneza.",
+    "reserva": "Hacé tu reserva",
+    "scrollAria": "Bajar a nuestros cortes",
+    "sectionTitle": "NUESTROS CORTES",
+    "sectionDesc": "Nuestros cortes provienen exclusivamente de novillos Hereford o Aberdeen Angus, criados a campo en pasturas naturales. Se cocinan en la parrilla con quebracho blanco, espinillo y carbón para un ahumado perfecto.",
+    "reservaMesa": "Reservá tu mesa",
+    "cortesList": ["Bife de chorizo 400 g", "Ojo de bife 400 g", "Lomo 400 g", "Entraña 450 g", "Tira de asado del centro 800 g", "Tomahawk 1600 g (¡para compartir!)", "T-bone 850 g"]
+  },
+  "cortesModal": {
+    "bifeChorizo": { "nombre": "Bife de chorizo", "peso": "400 g", "descripcion": "Uno de los cortes más demandados. De la zona del lomo bajo, destaca por su marmoleado y su sabor intenso. Ideal a punto para realzar su jugosidad." },
+    "ojoBife": { "nombre": "Ojo de bife", "peso": "400 g", "descripcion": "Es un corte conocido por su sabor intenso, su textura tierna y jugosa. Proviene del centro del costillar y se cocina a las brasas para resaltar su carácter." },
+    "tomahawk": { "nombre": "Tomahawk", "peso": "1600 g (¡para compartir!)", "descripcion": "Costilla con hueso largo, espectacular a la parrilla. Jugoso y con el sabor que aporta el hueso. Ideal para compartir en la mesa." },
+    "tiraAsado": { "nombre": "Tira de asado del centro", "peso": "800 g", "descripcion": "Clásico argentino por excelencia. Cortada del costillar, con su característica grasa que aporta sabor. Para compartir o disfrutar con generosidad." },
+    "tbone": { "nombre": "T-bone", "peso": "850 g", "descripcion": "Corte con hueso en T: un lado lomo, el otro solomillo. Dos texturas en una misma pieza. Para los que quieren lo mejor de ambos mundos." },
+    "lomo": { "nombre": "Lomo", "peso": "400 g", "descripcion": "Corte noble y magro del lomo alto. Muy tierno y de sabor delicado. Perfecto para quienes buscan elegancia en el bocado." },
+    "entrana": { "nombre": "Entraña", "peso": "450 g", "descripcion": "Corte de carácter, del diafragma. Sabor marcado y textura firme. Un favorito de los amantes de la parrilla cuando se hace a punto." }
+  },
+  "historia": {
+    "pageTitle": "NUESTRA HISTORIA",
+    "reserva": "Hacé tu reserva",
+    "timeline": {
+      "1953": "Recién llegados de España, Jesús Perna y su esposa abrieron un pequeño almacén en Palermo. Los vecinos, atraídos por el jamón crudo que servían en la barra, convirtieron a este rincón en un clásico del barrio.",
+      "2002": "A finales del año 2000, Lo de Jesús cerró sus puertas en formato clásico y en 2002 reabrió con la premisa de mantener el ambiente original y sumar una apuesta por las carnes a las brasas. El concepto claro: un restaurante de carnes con algunos platos de vieja escuela de bodegón y una excelente cava de vinos.",
+      "2008": "Siguiendo la creciente demanda de turismo y la pasión por la carne, Lo de Jesús incorpora las carnes a las brasas. Así, el bodegón evoluciona a parrilla de calidad, afianzando su reputación entre locales y visitantes.",
+      "2016": "Nace La Malbequería, la vinoteca de Lo de Jesús y la primera especializada en Malbec. Con un portfolio diverso y federal, recorre las zonas vitivinícolas de Argentina, ofreciendo etiquetas de todo el país.",
+      "hoy": "Lo de Jesús se convirtió en un verdadero templo de la carne y el vino, donde alrededor de 300 comensales diarios vienen en busca de una experiencia auténtica y memorable."
+    }
+  },
+  "eventos": {
+    "title": "EVENTOS",
+    "scrollAria": "Bajar a tipos de eventos",
+    "tiposTitle": "¿QUÉ TIPOS DE EVENTOS OFRECEMOS?",
+    "tiposDesc": "Nuestros espacios versátiles se adaptan a eventos corporativos y sociales, con propuestas diseñadas para cada ocasión.",
+    "consultanos": "Consultanos por tu evento",
+    "jornadas": "JORNADAS DE TRABAJO",
+    "degustacion": "DEGUSTACIÓN DE VINOS",
+    "almuerzos": "ALMUERZOS Y CENAS",
+    "cocktail": "EXCLUSIVO COCKTAIL",
+    "masInfo": "Más información",
+    "salonesTitle": "NUESTROS SALONES",
+    "salon1": "SALÓN \"LO DE JESÚS\"",
+    "salon2": "VEREDA \"LO DE JESÚS\"",
+    "salon3": "EL JARDÍN",
+    "salon4": "GALERÍA DE LAS BODEGAS",
+    "salon5": "SALÓN DE LOS BALCONES",
+    "salon6": "JARDÍN DE INVIERNO"
+  },
+  "prensa": {
+    "title": "LO QUE LA PRENSA DICE DE NOSOTROS",
+    "verNota": "Ver nota",
+    "comensalesTitle": "NUESTROS COMENSALES DICEN",
+    "opinion": "Queremos conocer tu opinión",
+    "escribirResena": "Escribir reseña",
+    "cita1": "La Malbequería, ícono de la cultura del vino en Buenos Aires, vuelve a sorprender con dos eventos que celebran lo mejor de la gastronomía, la música y las grandes etiquetas argentinas.",
+    "cita2": "Un clásico de Palermo de 1953: el almacén de barrio que se transformó en el templo de la carne y el vino. Lo abrió el gallego Jesús y hoy es paso obligado de turistas.",
+    "cita3": "En el marco del Día del Malbec, La Malbequería propone una experiencia única para los amantes del vino argentino: cata y degustación del varietal más representativo del país.",
+    "testimonio": "La Malbequería es un espacio dentro del concepto resto Lo de Jesús. Bien atendido. Su especialidad son los diferentes cortes de carne y la extensa carta de vinos."
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "nav": {
+    "carnes": "Our meats",
+    "menu": "The menu",
+    "historia": "Our story",
+    "eventos": "Events",
+    "prensa": "Press",
+    "delivery": "Delivery"
+  },
+  "hero": {
+    "title1": "THE TEMPLE OF",
+    "title2": "MEAT & WINE",
+    "subtitle": "The legendary corner of Argentine gastronomy in Buenos Aires",
+    "reserva": "Make a reservation",
+    "anni1": "70 YEARS",
+    "anni2": "OF CULINARY PASSION",
+    "historia": "Our story"
+  },
+  "meatEvents": {
+    "carnesTitle": "OUR MEATS",
+    "carnesDesc": "We carefully select every cut that reaches your table. Our meat sommelier verifies at origin that each cut meets strict quality standards, ensuring full traceability throughout the process.",
+    "conocerMas": "Learn more",
+    "eventosTitle": "EVENTS",
+    "eventosDesc": "Our versatile spaces adapt to corporate and social events, with proposals designed for every occasion.",
+    "verMas": "See more"
+  },
+  "social": {
+    "instagramTitle": "INSTAGRAM",
+    "verInstagram": "View Instagram",
+    "prensaTitle": "PRESS",
+    "prensaQuote": "I have already been twice to this unique space, incomparable in the heart of Palermo. Lo de Jesus was in its beginnings, in the last century, a beverage store and grocery, like so many in old Palermo.",
+    "prensaSource": "El Gourmet",
+    "verPrensa": "View press"
+  },
+  "footer": {
+    "address": "Lo de Jesús, Gurruchaga 1406",
+    "schedule": "Monday to Sunday 12:00 pm - 01:00 am"
+  },
+  "carnes": {
+    "pageTitle": "OUR MEATS",
+    "heroDesc": "We rigorously select every cut that reaches your table. Our meat sommelier verifies at origin that each piece meets demanding quality and traceability standards. Cold ageing for 15 to 21 days enhances flavour and tenderness.",
+    "reserva": "Make a reservation",
+    "scrollAria": "Scroll to our cuts",
+    "sectionTitle": "OUR CUTS",
+    "sectionDesc": "Our cuts come exclusively from Hereford or Aberdeen Angus steers, raised on pasture. They are cooked on the grill with quebracho blanco, espinillo and charcoal for a perfect smoke.",
+    "reservaMesa": "Reserve your table",
+    "cortesList": ["Sirloin strip 400 g", "Rib eye 400 g", "Tenderloin 400 g", "Skirt 450 g", "Short ribs 800 g", "Tomahawk 1600 g (to share!)", "T-bone 850 g"]
+  },
+  "cortesModal": {
+    "bifeChorizo": { "nombre": "Sirloin strip", "peso": "400 g", "descripcion": "One of the most in-demand cuts. From the short loin, it stands out for its marbling and intense flavour. Ideal medium-rare to bring out its juiciness." },
+    "ojoBife": { "nombre": "Rib eye", "peso": "400 g", "descripcion": "A cut known for its intense flavour, tender and juicy texture. From the centre of the rib, it is cooked on the grill to bring out its character." },
+    "tomahawk": { "nombre": "Tomahawk", "peso": "1600 g (to share!)", "descripcion": "Long-bone rib, spectacular on the grill. Juicy with the flavour the bone adds. Ideal to share at the table." },
+    "tiraAsado": { "nombre": "Short ribs", "peso": "800 g", "descripcion": "The Argentine classic. Cut from the rib with its characteristic fat for flavour. To share or enjoy generously." },
+    "tbone": { "nombre": "T-bone", "peso": "850 g", "descripcion": "Cut with a T-shaped bone: one side strip, the other tenderloin. Two textures in one piece. For those who want the best of both worlds." },
+    "lomo": { "nombre": "Tenderloin", "peso": "400 g", "descripcion": "Noble, lean cut from the short loin. Very tender and delicate in flavour. Perfect for those seeking elegance in every bite." },
+    "entrana": { "nombre": "Skirt", "peso": "450 g", "descripcion": "A cut with character, from the diaphragm. Bold flavour and firm texture. A favourite among grill lovers when cooked to medium." }
+  },
+  "historia": {
+    "pageTitle": "OUR STORY",
+    "reserva": "Make a reservation",
+    "timeline": {
+      "1953": "Fresh from Spain, Jesús Perna and his wife opened a small grocery store in Palermo. Neighbours, drawn by the cured ham they served at the bar, made this corner a neighbourhood classic.",
+      "2002": "In late 2000, Lo de Jesús closed in its classic format and in 2002 reopened with the aim of keeping the original atmosphere and adding a focus on grilled meats. The clear concept: a meat restaurant with old-school bodegón dishes and an excellent wine cellar.",
+      "2008": "Following growing tourism demand and a passion for meat, Lo de Jesús added grilled meats. The bodegón evolved into a quality grill, strengthening its reputation among locals and visitors.",
+      "2016": "La Malbequería was born, Lo de Jesús's wine shop and the first specialised in Malbec. With a diverse, nationwide portfolio, it covers Argentina's wine regions and offers labels from across the country.",
+      "hoy": "Lo de Jesús became a true temple of meat and wine, where around 300 diners a day come in search of an authentic and memorable experience."
+    }
+  },
+  "eventos": {
+    "title": "EVENTS",
+    "scrollAria": "Scroll to event types",
+    "tiposTitle": "WHAT TYPES OF EVENTS DO WE OFFER?",
+    "tiposDesc": "Our versatile spaces adapt to corporate and social events, with proposals designed for every occasion.",
+    "consultanos": "Contact us for your event",
+    "jornadas": "WORK SESSIONS",
+    "degustacion": "WINE TASTING",
+    "almuerzos": "LUNCHES AND DINNERS",
+    "cocktail": "EXCLUSIVE COCKTAIL",
+    "masInfo": "More information",
+    "salonesTitle": "OUR ROOMS",
+    "salon1": "LO DE JESÚS ROOM",
+    "salon2": "LO DE JESÚS TERRACE",
+    "salon3": "THE GARDEN",
+    "salon4": "WINE CELLAR GALLERY",
+    "salon5": "BALCONY ROOM",
+    "salon6": "WINTER GARDEN"
+  },
+  "prensa": {
+    "title": "WHAT THE PRESS SAYS ABOUT US",
+    "verNota": "Read article",
+    "comensalesTitle": "WHAT OUR DINERS SAY",
+    "opinion": "We want to hear your opinion",
+    "escribirResena": "Write a review",
+    "cita1": "La Malbequería, an icon of wine culture in Buenos Aires, surprises again with two events celebrating the best of gastronomy, music and Argentina's great labels.",
+    "cita2": "A Palermo classic since 1953: the neighbourhood store that became the temple of meat and wine. Opened by the Galician Jesús, it is now a must for tourists.",
+    "cita3": "On Malbec Day, La Malbequería offers a unique experience for lovers of Argentine wine: tasting of the country's most representative varietal.",
+    "testimonio": "La Malbequería is a space within the Lo de Jesús restaurant concept. Great service. Its specialty is the different cuts of meat and the extensive wine list."
+  }
+}
