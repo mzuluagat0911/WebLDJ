@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { Providers } from "./components/Providers";
+import { FloatingReservaButton } from "./components/FloatingReservaButton";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -22,7 +23,10 @@ export default function RootLayout({
   return (
     <html lang="es" suppressHydrationWarning>
       <body className={`${poppins.variable} antialiased`}>
-        <Providers>{children}</Providers>
+        <Providers>
+          {children}
+          <FloatingReservaButton />
+        </Providers>
       </body>
     </html>
   );
