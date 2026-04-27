@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export type CorteInfo = {
   id: string;
@@ -17,6 +17,8 @@ type CutModalProps = {
 };
 
 export function CutModal({ corte, onClose }: CutModalProps) {
+  const [imageSrc, setImageSrc] = useState("/images/carne1.png");
+
   useEffect(() => {
     if (!corte) return;
     const handleEscape = (e: KeyboardEvent) => {
@@ -29,6 +31,11 @@ export function CutModal({ corte, onClose }: CutModalProps) {
       document.removeEventListener("keydown", handleEscape);
     };
   }, [corte, onClose]);
+
+  useEffect(() => {
+    if (!corte) return;
+    setImageSrc(corte.imagen);
+  }, [corte]);
 
   if (!corte) return null;
 
@@ -60,11 +67,12 @@ export function CutModal({ corte, onClose }: CutModalProps) {
         </button>
         <div className="relative aspect-[4/3] w-full shrink-0 bg-black">
           <Image
-            src={corte.imagen}
+            src={imageSrc}
             alt={corte.nombre}
             fill
             className="object-cover"
             sizes="(max-width: 512px) 100vw, 512px"
+            onError={() => setImageSrc("/images/carne1.png")}
           />
         </div>
         <div className="overflow-y-auto p-4 sm:p-6 lg:p-8">
@@ -72,7 +80,7 @@ export function CutModal({ corte, onClose }: CutModalProps) {
             {corte.nombre}
           </h2>
           {corte.peso && (
-            <p className="mt-1 text-btn font-medium text-red-400">{corte.peso}</p>
+            <p className="mt-1 text-btn font-medium text-[#6a1613]">{corte.peso}</p>
           )}
           <p className="mt-3 text-body leading-relaxed text-white/90">
             {corte.descripcion}

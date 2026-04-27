@@ -8,17 +8,17 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-poppins);
+  --font-sans: var(--font-nunito-sans);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-poppins), system-ui, sans-serif;
+  font-family: var(--font-nunito-sans), system-ui, sans-serif;
 }
 
 .heading-caslon {
-  font-family: "ITC CASLON 224 Std", "Times New Roman", serif;
+  font-family: var(--font-libre-caslon), "Times New Roman", serif;
   font-weight: 400;
   letter-spacing: 0.18em;
 }

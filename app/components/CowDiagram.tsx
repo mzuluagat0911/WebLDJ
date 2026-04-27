@@ -6,14 +6,14 @@ import { useLocale } from "../context/LocaleContext";
 import type { CorteInfo } from "./CutModal";
 import { CutModal } from "./CutModal";
 
-const HOTSPOT_CONFIG: Array<{ id: string; left: number; top: number; cortesKey: string; corteId: string }> = [
-  { id: "paleta", left: 24, top: 40, cortesKey: "bifeChorizo", corteId: "bife-chorizo" },
-  { id: "costillas", left: 38, top: 38, cortesKey: "ojoBife", corteId: "ojo-bife" },
-  { id: "tomahawk", left: 44, top: 44, cortesKey: "tomahawk", corteId: "tomahawk" },
-  { id: "vacio", left: 44, top: 56, cortesKey: "tiraAsado", corteId: "tira-asado" },
-  { id: "t-bone", left: 56, top: 34, cortesKey: "tbone", corteId: "t-bone" },
-  { id: "lomo", left: 66, top: 32, cortesKey: "lomo", corteId: "lomo" },
-  { id: "vientre", left: 56, top: 64, cortesKey: "entrana", corteId: "entrana" },
+const HOTSPOT_CONFIG: Array<{ id: string; left: number; top: number; cortesKey: string; corteId: string; imagePath: string }> = [
+  { id: "paleta", left: 29, top: 47, cortesKey: "ojoBife", corteId: "ojo-bife", imagePath: "/images/cortes/ojo-bife.jpg" },
+  { id: "costillas", left: 41, top: 44, cortesKey: "tomahawk", corteId: "tomahawk", imagePath: "/images/cortes/tomahawk.jpg" },
+  { id: "tomahawk", left: 52, top: 43, cortesKey: "tiraAsado", corteId: "tira-asado", imagePath: "/images/cortes/tira-asado.jpg" },
+  { id: "vacio", left: 40, top: 56, cortesKey: "entrana", corteId: "entrana", imagePath: "/images/cortes/entrana.jpg" },
+  { id: "t-bone", left: 57, top: 36, cortesKey: "bifeChorizo", corteId: "bife-chorizo", imagePath: "/images/cortes/bife-chorizo.jpg" },
+  { id: "lomo", left: 66, top: 35, cortesKey: "tbone", corteId: "t-bone", imagePath: "/images/cortes/t-bone.jpg" },
+  { id: "vientre", left: 53, top: 63, cortesKey: "lomo", corteId: "lomo", imagePath: "/images/cortes/lomo.jpg" },
 ];
 
 export function CowDiagram() {
@@ -21,7 +21,7 @@ export function CowDiagram() {
   const [selectedCorte, setSelectedCorte] = useState<CorteInfo | null>(null);
 
   const hotspots = useMemo(() => {
-    return HOTSPOT_CONFIG.map(({ id, left, top, cortesKey, corteId }) => ({
+    return HOTSPOT_CONFIG.map(({ id, left, top, cortesKey, corteId, imagePath }) => ({
       id,
       left,
       top,
@@ -30,7 +30,7 @@ export function CowDiagram() {
         nombre: t(`cortesModal.${cortesKey}.nombre`),
         peso: t(`cortesModal.${cortesKey}.peso`),
         descripcion: t(`cortesModal.${cortesKey}.descripcion`),
-        imagen: "/images/carne1.png",
+        imagen: imagePath,
       } as CorteInfo,
     }));
   }, [t]);
@@ -53,7 +53,7 @@ export function CowDiagram() {
                 key={id}
                 type="button"
                 onClick={() => setSelectedCorte(corte)}
-                className="absolute flex h-11 w-11 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-[#5C2D2B] text-white shadow-md transition hover:scale-110 hover:bg-[#722f2d] focus-visible:ring-2 focus-visible:ring-red-400 focus-visible:ring-offset-1 focus-visible:ring-offset-zinc-900 sm:h-8 sm:w-8"
+                className="absolute flex h-11 w-11 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-[#6a1613] text-white shadow-md transition hover:scale-110 hover:bg-[#55110f] focus-visible:ring-2 focus-visible:ring-[#6a1613] focus-visible:ring-offset-1 focus-visible:ring-offset-zinc-900 sm:h-8 sm:w-8"
                 style={{ left: `${left}%`, top: `${top}%` }}
                 aria-label={`Ver información de ${corte.nombre}`}
               >

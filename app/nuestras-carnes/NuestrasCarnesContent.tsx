@@ -39,7 +39,7 @@ export function NuestrasCarnesContent() {
           <div className="mt-8 flex flex-col items-center gap-4 sm:mt-10 sm:gap-6 lg:mt-12">
             <Link
               href="/"
-              className="inline-flex min-h-[48px] items-center justify-center rounded bg-red-600 px-8 py-3.5 text-btn font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-red-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black sm:px-12 lg:px-14 lg:py-4"
+              className="inline-flex min-h-[48px] items-center justify-center rounded bg-[#6a1613] px-8 py-3.5 text-btn font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-[#55110f] focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black sm:px-12 lg:px-14 lg:py-4"
             >
               {t("carnes.reserva")}
             </Link>
@@ -60,17 +60,16 @@ export function NuestrasCarnesContent() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:max-w-7xl lg:px-10">
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 lg:items-start">
             <div className="order-2 lg:order-1">
-              <h2 className="heading-caslon text-h1 font-normal tracking-[0.12em] text-white sm:tracking-[0.2em] text-left">
+              <h2 className="heading-caslon text-h1 font-normal tracking-[0.12em] text-white text-left sm:tracking-[0.2em]">
                 {t("carnes.sectionTitle")}
               </h2>
-              <p className="mt-3 max-w-lg text-body leading-relaxed text-white/90 sm:mt-4 lg:mt-5 text-left">
+              <p className="mt-3 max-w-lg text-left text-body leading-relaxed tracking-normal text-white/90 sm:mt-4 lg:mt-5">
                 {t("carnes.sectionDesc")}
               </p>
-              <ul className="mt-6 grid gap-2 text-body text-white/95 sm:grid-cols-2 sm:gap-3 sm:mt-8 lg:mt-10 lg:gap-4">
+              <ul className="mt-6 space-y-1.5 pl-5 text-body leading-relaxed tracking-normal text-white/95 marker:text-[#6a1613] sm:mt-8 lg:mt-10">
                 {cortesList.map((corte) => (
-                  <li key={corte} className="flex items-baseline gap-2">
-                    <span className="text-red-400 shrink-0">•</span>
-                    <span>{corte}</span>
+                  <li key={corte} className="list-disc">
+                    {corte}
                   </li>
                 ))}
               </ul>
@@ -89,7 +88,7 @@ export function NuestrasCarnesContent() {
           </p>
           <Link
             href="/"
-            className="mt-4 inline-flex min-h-[48px] items-center justify-center rounded bg-[#5C2D2B] px-10 py-3.5 text-center text-btn font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-[#4a2523] focus-visible:ring-2 focus-visible:ring-[#5C2D2B] focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-50 sm:px-16 lg:px-20 lg:py-4.5"
+            className="mt-4 inline-flex min-h-[48px] items-center justify-center rounded bg-[#6a1613] px-10 py-3.5 text-center text-btn font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-[#55110f] focus-visible:ring-2 focus-visible:ring-[#6a1613] focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-50 sm:px-16 lg:px-20 lg:py-4.5"
           >
             {t("carnes.reserva")}
           </Link>

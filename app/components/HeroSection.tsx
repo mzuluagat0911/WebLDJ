@@ -31,7 +31,7 @@ export function HeroSection() {
           <div className="pointer-events-auto mt-8 lg:mt-10">
             <Link
               href="/"
-              className="inline-flex min-h-[48px] items-center justify-center rounded bg-red-600 px-12 py-3.5 text-xs font-semibold uppercase tracking-[0.25em] text-white transition hover:bg-red-500 lg:px-14 lg:py-4 lg:text-[13px]"
+              className="inline-flex min-h-[48px] items-center justify-center rounded bg-[#6a1613] px-12 py-3.5 text-xs font-semibold uppercase tracking-[0.25em] text-white transition hover:bg-[#55110f] lg:px-14 lg:py-4 lg:text-[13px]"
             >
               Hacé tu reserva
             </Link>

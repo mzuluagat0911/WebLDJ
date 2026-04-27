@@ -1,13 +1,19 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Libre_Caslon_Text, Nunito_Sans } from "next/font/google";
 import { Providers } from "./components/Providers";
 import { FloatingReservaButton } from "./components/FloatingReservaButton";
 import "./globals.css";
 
-const poppins = Poppins({
+const nunitoSans = Nunito_Sans({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-poppins",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-nunito-sans",
+});
+
+const libreCaslonText = Libre_Caslon_Text({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-libre-caslon",
 });
 
 export const metadata: Metadata = {
@@ -22,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" suppressHydrationWarning>
-      <body className={`${poppins.variable} antialiased`}>
+      <body className={`${nunitoSans.variable} ${libreCaslonText.variable} antialiased`}>
         <Providers>
           {children}
           <FloatingReservaButton />
