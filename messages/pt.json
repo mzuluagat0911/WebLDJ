@@ -5,7 +5,17 @@
     "historia": "Nossa história",
     "eventos": "Eventos",
     "prensa": "Imprensa",
-    "delivery": "Delivery"
+    "delivery": "Delivery",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu",
+    "menuLabel": "Menu",
+    "close": "Fechar",
+    "mainAria": "Navegação principal",
+    "changeLanguage": "Mudar idioma para"
+  },
+  "common": {
+    "goHome": "Lo de Jesús - Ir para o início",
+    "close": "Fechar"
   },
   "hero": {
     "title1": "O TEMPLO DA",
@@ -14,7 +24,9 @@
     "reserva": "Faça sua reserva",
     "anni1": "70 ANOS",
     "anni2": "DE PAIXÃO CULINÁRIA",
-    "historia": "Nossa história"
+    "historia": "Nossa história",
+    "bannerAlt": "Fachada do Lo de Jesús em Palermo",
+    "waiterAlt": "Garçom do Lo de Jesús apresentando um corte de carne"
   },
   "meatEvents": {
     "carnesTitle": "NOSSAS CARNES",
@@ -22,7 +34,10 @@
     "conocerMas": "Saiba mais",
     "eventosTitle": "EVENTOS",
     "eventosDesc": "Nossos espaços versáteis se adaptam a eventos corporativos e sociais, com propostas pensadas para cada ocasião.",
-    "verMas": "Ver mais"
+    "verMas": "Ver mais",
+    "carnesAlt": "Prato de carne do Lo de Jesús",
+    "eventosImage1Alt": "Eventos no Lo de Jesús - mesa e vinhos",
+    "eventosImage2Alt": "Eventos no Lo de Jesús - convidados"
   },
   "social": {
     "instagramTitle": "INSTAGRAM",
@@ -43,6 +58,8 @@
     "scrollAria": "Ir para nossos cortes",
     "sectionTitle": "NOSSOS CORTES",
     "sectionDesc": "Nossos cortes vêm exclusivamente de novilhos Hereford ou Aberdeen Angus, criados a campo em pastagens naturais. São cozidos na parrilla com quebracho branco, espinillo e carvão para um ahumado perfeito.",
+    "diagramAlt": "Diagrama de cortes: toque em cada área para conhecer o corte",
+    "diagramAriaPrefix": "Ver informação de",
     "reservaMesa": "Reserve sua mesa",
     "cortesList": ["Bife de chorizo 400 g", "Olho de bife 400 g", "Lombo 400 g", "Entranha 450 g", "Tira de costela 800 g", "Tomahawk 1600 g (para compartilhar!)", "T-bone 850 g"]
   },

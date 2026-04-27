@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { useLocale } from "../context/LocaleContext";
 
 export type CorteInfo = {
   id: string;
@@ -17,6 +18,7 @@ type CutModalProps = {
 };
 
 export function CutModal({ corte, onClose }: CutModalProps) {
+  const { t } = useLocale();
   const [imageSrc, setImageSrc] = useState("/images/carne1.png");
 
   useEffect(() => {
@@ -51,7 +53,7 @@ export function CutModal({ corte, onClose }: CutModalProps) {
         type="button"
         onClick={onClose}
         className="absolute inset-0 bg-black/80 backdrop-blur-sm transition-opacity"
-        aria-label="Cerrar"
+        aria-label={t("common.close")}
       />
       {/* Modal: en mobile ocupa casi toda la altura y hace scroll */}
       <div className="relative flex max-h-[92vh] w-full max-w-md flex-col overflow-hidden rounded-t-2xl bg-zinc-900 shadow-2xl ring-1 ring-white/10 sm:max-h-[90vh] sm:max-w-lg sm:rounded-xl">
@@ -59,7 +61,7 @@ export function CutModal({ corte, onClose }: CutModalProps) {
           type="button"
           onClick={onClose}
           className="absolute right-3 top-3 z-10 flex h-10 w-10 min-h-[44px] min-w-[44px] items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-white/20 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-900"
-          aria-label="Cerrar"
+          aria-label={t("common.close")}
         >
           <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />

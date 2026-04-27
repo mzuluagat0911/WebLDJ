@@ -41,7 +41,7 @@ export function CowDiagram() {
         <div className="relative aspect-[560/480] w-full min-h-[220px] sm:min-h-[280px] lg:min-h-0">
           <Image
             src="/images/vaca.png"
-            alt="Diagrama de cortes: tocá cada zona para conocer el corte"
+            alt={t("carnes.diagramAlt")}
             fill
             quality={100}
             className="object-contain object-center select-none pointer-events-none"
@@ -55,7 +55,7 @@ export function CowDiagram() {
                 onClick={() => setSelectedCorte(corte)}
                 className="absolute flex h-11 w-11 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-[#6a1613] text-white shadow-md transition hover:scale-110 hover:bg-[#55110f] focus-visible:ring-2 focus-visible:ring-[#6a1613] focus-visible:ring-offset-1 focus-visible:ring-offset-zinc-900 sm:h-8 sm:w-8"
                 style={{ left: `${left}%`, top: `${top}%` }}
-                aria-label={`Ver información de ${corte.nombre}`}
+                aria-label={`${t("carnes.diagramAriaPrefix")} ${corte.nombre}`}
               >
                 <span className="text-base font-light leading-none sm:text-base">+</span>
               </button>

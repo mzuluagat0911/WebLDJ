@@ -1,7 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useLocale } from "../context/LocaleContext";
 
 export function SiteFooter() {
+  const { t } = useLocale();
+
   return (
     <footer className="bg-black text-white">
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-12 lg:max-w-7xl lg:px-10 lg:py-16">
@@ -9,7 +14,7 @@ export function SiteFooter() {
           <Link
             href="/"
             className="relative block h-11 w-36 shrink-0 sm:h-12 sm:w-44 lg:h-16 lg:w-56 transition-opacity hover:opacity-90 focus:opacity-90 min-h-[44px]"
-            aria-label="Lo de Jesús - Ir al inicio"
+            aria-label={t("common.goHome")}
           >
             <Image
               src="/images/blancologo.svg"
@@ -20,8 +25,8 @@ export function SiteFooter() {
             />
           </Link>
           <div className="flex flex-col items-center gap-3 text-center text-xs sm:flex-row sm:gap-12 sm:text-left sm:text-[13px] lg:gap-16 lg:text-sm lg:tracking-wide">
-            <p className="text-white/90">Lo de Jesús, Gurruchaga 1406</p>
-            <p className="text-white/90">Lunes a Domingo 12:00 pm - 01:00 am</p>
+            <p className="text-white/90">{t("footer.address")}</p>
+            <p className="text-white/90">{t("footer.schedule")}</p>
           </div>
           <div className="flex flex-col items-center gap-3 text-center sm:items-end sm:text-right text-xs sm:text-[13px] lg:gap-4 lg:text-sm">
             <a href="tel:+5491139431734" className="text-white/90 transition hover:text-white">

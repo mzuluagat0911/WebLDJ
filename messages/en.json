@@ -5,7 +5,17 @@
     "historia": "Our story",
     "eventos": "Events",
     "prensa": "Press",
-    "delivery": "Delivery"
+    "delivery": "Delivery",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "menuLabel": "Menu",
+    "close": "Close",
+    "mainAria": "Main navigation",
+    "changeLanguage": "Change language to"
+  },
+  "common": {
+    "goHome": "Lo de Jesús - Go to homepage",
+    "close": "Close"
   },
   "hero": {
     "title1": "THE TEMPLE OF",
@@ -14,7 +24,9 @@
     "reserva": "Make a reservation",
     "anni1": "70 YEARS",
     "anni2": "OF CULINARY PASSION",
-    "historia": "Our story"
+    "historia": "Our story",
+    "bannerAlt": "Front of Lo de Jesús in Palermo",
+    "waiterAlt": "Lo de Jesús waiter presenting a meat cut"
   },
   "meatEvents": {
     "carnesTitle": "OUR MEATS",
@@ -22,7 +34,10 @@
     "conocerMas": "Learn more",
     "eventosTitle": "EVENTS",
     "eventosDesc": "Our versatile spaces adapt to corporate and social events, with proposals designed for every occasion.",
-    "verMas": "See more"
+    "verMas": "See more",
+    "carnesAlt": "Lo de Jesús meat dish",
+    "eventosImage1Alt": "Events at Lo de Jesús - table and wines",
+    "eventosImage2Alt": "Events at Lo de Jesús - guests"
   },
   "social": {
     "instagramTitle": "INSTAGRAM",
@@ -43,6 +58,8 @@
     "scrollAria": "Scroll to our cuts",
     "sectionTitle": "OUR CUTS",
     "sectionDesc": "Our cuts come exclusively from Hereford or Aberdeen Angus steers, raised on pasture. They are cooked on the grill with quebracho blanco, espinillo and charcoal for a perfect smoke.",
+    "diagramAlt": "Cuts diagram: tap each area to learn about the cut",
+    "diagramAriaPrefix": "View information about",
     "reservaMesa": "Reserve your table",
     "cortesList": ["Sirloin strip 400 g", "Rib eye 400 g", "Tenderloin 400 g", "Skirt 450 g", "Short ribs 800 g", "Tomahawk 1600 g (to share!)", "T-bone 850 g"]
   },

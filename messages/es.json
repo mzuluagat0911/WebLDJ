@@ -5,7 +5,17 @@
     "historia": "Nuestra historia",
     "eventos": "Eventos",
     "prensa": "Prensa",
-    "delivery": "Delivery"
+    "delivery": "Delivery",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "menuLabel": "Menú",
+    "close": "Cerrar",
+    "mainAria": "Navegación principal",
+    "changeLanguage": "Cambiar idioma a"
+  },
+  "common": {
+    "goHome": "Lo de Jesús - Ir al inicio",
+    "close": "Cerrar"
   },
   "hero": {
     "title1": "EL TEMPLO DE",
@@ -14,7 +24,9 @@
     "reserva": "Hacé tu reserva",
     "anni1": "70 AÑOS",
     "anni2": "DE PASIÓN CULINARIA",
-    "historia": "Nuestra historia"
+    "historia": "Nuestra historia",
+    "bannerAlt": "Fachada de Lo de Jesús en Palermo",
+    "waiterAlt": "Mesero de Lo de Jesús presentando un corte de carne"
   },
   "meatEvents": {
     "carnesTitle": "NUESTRAS CARNES",
@@ -22,7 +34,10 @@
     "conocerMas": "Conocer más",
     "eventosTitle": "EVENTOS",
     "eventosDesc": "Nuestros espacios versátiles se adaptan a eventos corporativos y sociales, con propuestas diseñadas para cada ocasión.",
-    "verMas": "Ver más"
+    "verMas": "Ver más",
+    "carnesAlt": "Plato de carne de Lo de Jesús",
+    "eventosImage1Alt": "Eventos en Lo de Jesús - mesa y vinos",
+    "eventosImage2Alt": "Eventos en Lo de Jesús - invitados"
   },
   "social": {
     "instagramTitle": "INSTAGRAM",
@@ -43,6 +58,8 @@
     "scrollAria": "Bajar a nuestros cortes",
     "sectionTitle": "NUESTROS CORTES",
     "sectionDesc": "Nuestros cortes provienen exclusivamente de novillos Hereford o Aberdeen Angus, criados a campo en pasturas naturales. Se cocinan en la parrilla con quebracho blanco, espinillo y carbón para un ahumado perfecto.",
+    "diagramAlt": "Diagrama de cortes: tocá cada zona para conocer el corte",
+    "diagramAriaPrefix": "Ver información de",
     "reservaMesa": "Reservá tu mesa",
     "cortesList": ["Bife de chorizo 400 g", "Ojo de bife 400 g", "Lomo 400 g", "Entraña 450 g", "Tira de asado del centro 800 g", "Tomahawk 1600 g (¡para compartir!)", "T-bone 850 g"]
   },
