@@ -26,13 +26,15 @@ const ICONOS = [
   </svg>,
 ];
 
+const EVENTOS_IMG = "/images/Eventos";
+
 const SALONES_CONFIG = [
-  { id: "salon-lo-de-jesus", key: "salon1", images: ["/images/salon.jpg"] },
-  { id: "vereda", key: "salon2", images: ["/images/Eventos2.jpg"] },
-  { id: "jardin", key: "salon3", images: ["/images/Eventos1.jpg"] },
-  { id: "galeria-bodegas", key: "salon4", images: ["/images/Eventos1.jpg"] },
-  { id: "salon-balcones", key: "salon5", images: ["/images/salon.jpg"] },
-  { id: "jardin-invierno", key: "salon6", images: ["/images/Eventos2.jpg"] },
+  { id: "salon-lo-de-jesus", key: "salon1", images: [`${EVENTOS_IMG}/SalónLodeJesús.jpeg`] },
+  { id: "vereda", key: "salon2", images: [`${EVENTOS_IMG}/Vereda.jpeg`] },
+  { id: "jardin", key: "salon3", images: [`${EVENTOS_IMG}/Jardín.jpg`] },
+  { id: "galeria-bodegas", key: "salon4", images: [`${EVENTOS_IMG}/GaleríadelasBodegas.jpeg`] },
+  { id: "salon-balcones", key: "salon5", images: [`${EVENTOS_IMG}/SalóndelosBalcones.jpeg`] },
+  { id: "jardin-invierno", key: "salon6", images: [`${EVENTOS_IMG}/JardíndeInvierno.jpg`] },
 ];
 
 export function EventosContent() {
@@ -45,7 +47,7 @@ export function EventosContent() {
       <main>
         <section className="relative flex min-h-[70vh] w-full flex-col items-center justify-center overflow-hidden bg-black sm:min-h-[80vh] lg:min-h-[85vh]">
           <div className="absolute inset-0">
-            <Image src="/images/Eventos1.jpg" alt="" fill className="object-cover grayscale" priority sizes="100vw" />
+            <Image src={`${EVENTOS_IMG}/patio evento.jpg`} alt="" fill className="object-cover grayscale" priority sizes="100vw" />
             <div className="absolute inset-0 bg-black/50" />
           </div>
           <div className="relative flex flex-col items-center justify-center px-4 py-16 text-center sm:px-6 sm:py-20 lg:py-24">

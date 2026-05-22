@@ -5,6 +5,8 @@ import Link from "next/link";
 import { SiteHeader } from "../components/SiteHeader";
 import { SiteFooter } from "../components/SiteFooter";
 
+const MENU_IMG = "/images/Menu";
+
 export function MenuContent() {
   return (
     <div className="min-h-screen bg-black text-white">
@@ -15,7 +17,7 @@ export function MenuContent() {
           {/* Imagen izquierda: mesa con vinos y carnes */}
           <div className="relative order-2 aspect-[3/4] overflow-hidden rounded-lg lg:order-1 lg:aspect-[3/5]">
             <Image
-              src="/images/Eventos1.jpg"
+              src={`${MENU_IMG}/magenizquierda.jpg`}
               alt="Mesa con vinos y carnes a la parrilla - Lo de Jesús"
               fill
               className="object-cover"
@@ -45,7 +47,7 @@ export function MenuContent() {
           {/* Imagen derecha: chef con nombre */}
           <div className="relative order-3 aspect-[3/4] overflow-hidden rounded-lg lg:aspect-[3/5]">
             <Image
-              src="/images/mesero.jpg"
+              src={`${MENU_IMG}/Imagenderecha.jpg`}
               alt="Darío Gualtieri - Chef asesor de Lo de Jesús"
               fill
               className="object-cover object-top"

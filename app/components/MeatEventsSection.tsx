@@ -12,14 +12,13 @@ export function MeatEventsSection() {
       <div className="mx-auto flex max-w-6xl flex-col gap-16 px-4 sm:px-6 lg:max-w-7xl lg:gap-24 lg:px-10">
         {/* Nuestras carnes */}
         <div id="nuestras-carnes" className="grid items-center gap-10 lg:grid-cols-2 lg:gap-20">
-          <div className="relative flex min-h-[280px] items-center justify-center overflow-visible sm:min-h-[340px] lg:min-h-[420px]">
+          <div className="relative aspect-[4/5] min-h-[280px] overflow-hidden rounded-2xl sm:min-h-[340px] lg:min-h-[420px]">
             <Image
-              src="/images/carne1.png"
+              src="/images/Home/BloqueNuestrascarnes.jpg"
               alt={t("meatEvents.carnesAlt")}
-              width={560}
-              height={560}
-              sizes="(min-width: 1024px) 560px, 100vw"
-              className="h-auto w-full object-contain object-center"
+              fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="object-cover object-center"
             />
           </div>
           <div className="space-y-5 text-left text-black lg:space-y-6">
@@ -54,7 +53,7 @@ export function MeatEventsSection() {
           <div className="grid grid-cols-2 gap-4 lg:gap-6">
             <div className="relative aspect-[3/5] overflow-hidden rounded-2xl bg-black">
               <Image
-                src="/images/Eventos1.jpg"
+                src="/images/Home/BloqueEventos.jpg"
                 alt={t("meatEvents.eventosImage1Alt")}
                 fill
                 className="object-cover"
@@ -63,7 +62,7 @@ export function MeatEventsSection() {
             </div>
             <div className="relative aspect-[3/5] overflow-hidden rounded-2xl bg-black">
               <Image
-                src="/images/Eventos2.jpg"
+                src="/images/Home/BloqueEventos2.jpg"
                 alt={t("meatEvents.eventosImage2Alt")}
                 fill
                 className="object-cover"

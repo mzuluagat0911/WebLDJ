@@ -13,12 +13,12 @@ type MediaItem = {
 };
 
 const PLACEHOLDER_IMAGES = [
-  "/images/Bannerprincipal.jpg",
-  "/images/3edf87153b06937f7158a31548e7a30ce1c8486f.png",
-  "/images/Nuestras%20carnes.jpg",
-  "/images/Eventos1.jpg",
-  "/images/Eventos2.jpg",
-  "/images/Nuestras%20carnes.jpg",
+  "/images/Home/Bannerprincipal.jpg",
+  "/images/Home/Bloque70años.jpg",
+  "/images/Home/BloqueNuestrascarnes.jpg",
+  "/images/Home/BloqueEventos.jpg",
+  "/images/Home/BloqueEventos2.jpg",
+  "/images/Home/NF600571.jpg",
 ];
 
 export function InstagramFeedWidget() {

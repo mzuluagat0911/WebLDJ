@@ -15,7 +15,7 @@ export function HeroSection() {
       {/* Banner a pantalla completa */}
       <div className="relative h-screen w-full">
         <Image
-          src="/images/Bannerprincipal.jpg"
+          src="/images/Home/Bannerprincipal.jpg"
           alt={t("hero.bannerAlt")}
           fill
           priority
@@ -61,11 +61,11 @@ export function HeroSection() {
           </div>
           <div className="relative aspect-[3/4] min-h-[320px] overflow-hidden rounded-3xl sm:min-h-[400px] lg:min-h-0">
             <Image
-              src="/images/mesero.jpg"
+              src="/images/Home/Bloque70años.jpg"
               alt={t("hero.waiterAlt")}
               fill
               sizes="(min-width: 1024px) 50vw, 100vw"
-              className="object-contain object-center"
+              className="object-cover object-center"
             />
           </div>
         </div>

@@ -6,14 +6,16 @@ import { useLocale } from "../context/LocaleContext";
 import type { CorteInfo } from "./CutModal";
 import { CutModal } from "./CutModal";
 
+const CORTES_IMG = "/images/Cortes de carne";
+
 const HOTSPOT_CONFIG: Array<{ id: string; left: number; top: number; cortesKey: string; corteId: string; imagePath: string }> = [
-  { id: "paleta", left: 29, top: 47, cortesKey: "ojoBife", corteId: "ojo-bife", imagePath: "/images/cortes/ojo-bife.jpg" },
-  { id: "costillas", left: 41, top: 44, cortesKey: "tomahawk", corteId: "tomahawk", imagePath: "/images/cortes/tomahawk.jpg" },
-  { id: "tomahawk", left: 52, top: 43, cortesKey: "tiraAsado", corteId: "tira-asado", imagePath: "/images/cortes/tira-asado.jpg" },
-  { id: "vacio", left: 40, top: 56, cortesKey: "entrana", corteId: "entrana", imagePath: "/images/cortes/entrana.jpg" },
-  { id: "t-bone", left: 57, top: 36, cortesKey: "bifeChorizo", corteId: "bife-chorizo", imagePath: "/images/cortes/bife-chorizo.jpg" },
-  { id: "lomo", left: 66, top: 35, cortesKey: "tbone", corteId: "t-bone", imagePath: "/images/cortes/t-bone.jpg" },
-  { id: "vientre", left: 53, top: 63, cortesKey: "lomo", corteId: "lomo", imagePath: "/images/cortes/lomo.jpg" },
+  { id: "paleta", left: 29, top: 47, cortesKey: "ojoBife", corteId: "ojo-bife", imagePath: `${CORTES_IMG}/06 ojodebife.jpg` },
+  { id: "costillas", left: 41, top: 44, cortesKey: "tomahawk", corteId: "tomahawk", imagePath: `${CORTES_IMG}/04 tomahawk.jpg` },
+  { id: "tomahawk", left: 52, top: 43, cortesKey: "tiraAsado", corteId: "tira-asado", imagePath: `${CORTES_IMG}/02 tira de asado.jpg` },
+  { id: "vacio", left: 40, top: 56, cortesKey: "entrana", corteId: "entrana", imagePath: `${CORTES_IMG}/07 entraña.jpg` },
+  { id: "t-bone", left: 57, top: 36, cortesKey: "bifeChorizo", corteId: "bife-chorizo", imagePath: `${CORTES_IMG}/03 bifechorizo.jpg` },
+  { id: "lomo", left: 66, top: 35, cortesKey: "tbone", corteId: "t-bone", imagePath: `${CORTES_IMG}/05 tbone.jpg` },
+  { id: "vientre", left: 53, top: 63, cortesKey: "lomo", corteId: "lomo", imagePath: `${CORTES_IMG}/01 lomo.jpg` },
 ];
 
 export function CowDiagram() {
