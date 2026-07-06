@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useLocale } from "../context/LocaleContext";
 import { CowDiagram } from "../components/CowDiagram";
+import { WHATSAPP_RESERVA_URL } from "../lib/site";
 import { SiteHeader } from "../components/SiteHeader";
 import { SiteFooter } from "../components/SiteFooter";
 
@@ -37,12 +37,14 @@ export function NuestrasCarnesContent() {
           </p>
 
           <div className="mt-8 flex flex-col items-center gap-4 sm:mt-10 sm:gap-6 lg:mt-12">
-            <Link
-              href="/"
+            <a
+              href={WHATSAPP_RESERVA_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex min-h-[48px] items-center justify-center rounded bg-[#6a1613] px-8 py-3.5 text-btn font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-[#55110f] focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black sm:px-12 lg:px-14 lg:py-4"
             >
               {t("carnes.reserva")}
-            </Link>
+            </a>
             <a
               href="#nuestros-cortes"
               className="flex min-h-[48px] min-w-[48px] items-center justify-center rounded-full border border-white/40 text-white/90 transition hover:bg-white/10 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
@@ -86,12 +88,14 @@ export function NuestrasCarnesContent() {
           <p className="text-body font-medium uppercase tracking-widest text-zinc-500">
             {t("carnes.reservaMesa")}
           </p>
-          <Link
-            href="/"
+          <a
+            href={WHATSAPP_RESERVA_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-4 inline-flex min-h-[48px] items-center justify-center rounded bg-[#6a1613] px-10 py-3.5 text-center text-btn font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-[#55110f] focus-visible:ring-2 focus-visible:ring-[#6a1613] focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-50 sm:px-16 lg:px-20 lg:py-4.5"
           >
             {t("carnes.reserva")}
-          </Link>
+          </a>
         </div>
       </section>
 

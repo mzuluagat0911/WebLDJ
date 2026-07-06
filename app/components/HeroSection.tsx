@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { SiteHeader } from "./SiteHeader";
 import { useLocale } from "../context/LocaleContext";
+import { WHATSAPP_RESERVA_URL } from "../lib/site";
 
 export function HeroSection() {
   const { t } = useLocale();
@@ -34,12 +35,14 @@ export function HeroSection() {
             {t("hero.subtitle")}
           </p>
           <div className="pointer-events-auto mt-8 lg:mt-10">
-            <Link
-              href="/"
+            <a
+              href={WHATSAPP_RESERVA_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex min-h-[48px] items-center justify-center rounded bg-[#6a1613] px-12 py-3.5 text-xs font-semibold uppercase tracking-[0.25em] text-white transition hover:bg-[#55110f] lg:px-14 lg:py-4 lg:text-[13px]"
             >
               {t("hero.reserva")}
-            </Link>
+            </a>
           </div>
         </div>
       </div>

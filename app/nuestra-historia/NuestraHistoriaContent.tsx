@@ -1,17 +1,49 @@
- "use client";
- 
- import Image from "next/image";
+"use client";
+
+import Image from "next/image";
 import { useLocale } from "../context/LocaleContext";
 import { SiteHeader } from "../components/SiteHeader";
 import { SiteFooter } from "../components/SiteFooter";
 
- const TIMELINE = [
-   { year: "1953", yearKey: "1953", side: "left" as const, image: "/images/01.png", imageAlt: "Interior del almacén en sus inicios, Palermo" },
-   { year: "2002", yearKey: "2002", side: "right" as const, image: "/images/02.jpeg", imageAlt: "Carnes a las brasas en Lo de Jesús" },
-   { year: "2008", yearKey: "2008", side: "left" as const, image: "/images/03.jpeg", imageAlt: "Parrilla y brasas en Lo de Jesús" },
-   { year: "2016", yearKey: "2016", side: "right" as const, image: "/images/malbequeria.png", imageAlt: "Vinos y Malbec en Lo de Jesús" },
-   { year: "HOY", yearKey: "hoy", side: "left" as const, image: "/images/salon.jpg", imageAlt: "Salón y terraza de Lo de Jesús hoy" },
- ];
+const HISTORIA_IMG = "/images/Historia";
+
+const TIMELINE = [
+  {
+    year: "1953",
+    yearKey: "1953",
+    side: "left" as const,
+    image: `${HISTORIA_IMG}/JesúsPernas.jpg`,
+    imageAlt: "Jesús Pernas, fundador de Lo de Jesús",
+  },
+  {
+    year: "2002",
+    yearKey: "2002",
+    side: "right" as const,
+    image: `${HISTORIA_IMG}/SalónJesús.jpeg`,
+    imageAlt: "Salón de Lo de Jesús",
+  },
+  {
+    year: "2008",
+    yearKey: "2008",
+    side: "left" as const,
+    image: `${HISTORIA_IMG}/CarnesParrilla.jpg`,
+    imageAlt: "Carnes a la parrilla en Lo de Jesús",
+  },
+  {
+    year: "2016",
+    yearKey: "2016",
+    side: "right" as const,
+    image: `${HISTORIA_IMG}/GóndolaMalbequería.jpeg`,
+    imageAlt: "Góndola de vinos de La Malbequería",
+  },
+  {
+    year: "HOY",
+    yearKey: "hoy",
+    side: "left" as const,
+    image: `${HISTORIA_IMG}/Fachada.jpg`,
+    imageAlt: "Fachada actual de Lo de Jesús",
+  },
+];
 
 export function NuestraHistoriaContent() {
   const { t } = useLocale();

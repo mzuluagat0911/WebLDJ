@@ -61,7 +61,7 @@
     "diagramAlt": "Diagrama de cortes: tocá cada zona para conocer el corte",
     "diagramAriaPrefix": "Ver información de",
     "reservaMesa": "Reservá tu mesa",
-    "cortesList": ["Bife de chorizo 400 g", "Ojo de bife 400 g", "Lomo 400 g", "Entraña 450 g", "Tira de asado del centro 800 g", "Tomahawk 1600 g (¡para compartir!)", "T-bone 850 g"]
+    "cortesList": ["Ojo de bife 400 g", "Tomahawk 1600 g (¡para compartir!)", "Bife de chorizo 400 g", "T-bone 850 g", "Lomo 400 g", "Tira de asado del centro 800 g", "Entraña 450 g"]
   },
   "cortesModal": {
     "bifeChorizo": { "nombre": "Bife de chorizo", "peso": "400 g", "descripcion": "Uno de los cortes más demandados. De la zona del lomo bajo, destaca por su marmoleado y su sabor intenso. Ideal a punto para realzar su jugosidad." },
@@ -76,11 +76,11 @@
     "pageTitle": "NUESTRA HISTORIA",
     "reserva": "Hacé tu reserva",
     "timeline": {
-      "1953": "Recién llegados de España, Jesús Perna y su esposa abrieron un pequeño almacén en Palermo. Los vecinos, atraídos por el jamón crudo que servían en la barra, convirtieron a este rincón en un clásico del barrio.",
-      "2002": "A finales del año 2000, Lo de Jesús cerró sus puertas en formato clásico y en 2002 reabrió con la premisa de mantener el ambiente original y sumar una apuesta por las carnes a las brasas. El concepto claro: un restaurante de carnes con algunos platos de vieja escuela de bodegón y una excelente cava de vinos.",
+      "1953": "Recién llegados de España, Jesús Pernas y su esposa Lola inauguran un almacén de ramos generales en el corazón del barrio de Palermo. Jesús tenía una pequeña barra donde servía vermouth y cortaba jamón crudo para sus visitantes, que por aquel entonces eran vecinos, taxistas y dueños de talleres mecánicos del barrio.",
+      "2002": "A finales de la década del 90 Jesús cerró el almacén y se reabrieron las puertas a principios de los 2000 con una propuesta de bodegón porteño al cual se llamó \"Lo de Jesús\", en honor al fundador de la esquina. Se mantuvo hasta hoy la estética del inicio de los años 50.",
       "2008": "Siguiendo la creciente demanda de turismo y la pasión por la carne, Lo de Jesús incorpora las carnes a las brasas. Así, el bodegón evoluciona a parrilla de calidad, afianzando su reputación entre locales y visitantes.",
-      "2016": "Nace La Malbequería, la vinoteca de Lo de Jesús y la primera especializada en Malbec. Con un portfolio diverso y federal, recorre las zonas vitivinícolas de Argentina, ofreciendo etiquetas de todo el país.",
-      "hoy": "Lo de Jesús se convirtió en un verdadero templo de la carne y el vino, donde alrededor de 300 comensales diarios vienen en busca de una experiencia auténtica y memorable."
+      "2016": "El restaurante inaugura su propia vinoteca, La Malbequería, primera especializada en malbec, con un portfolio de más de 350 etiquetas con recorrido federal, representando a todas las zonas vitivinícolas de Argentina.",
+      "hoy": "Lo de Jesús se convirtió en el verdadero TEMPLO DE LA CARNE Y EL VINO, donde locales y turistas de todo el mundo vienen en busca de una experiencia auténtica y memorable."
     }
   },
   "eventos": {

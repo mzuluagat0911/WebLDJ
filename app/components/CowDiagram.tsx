@@ -8,14 +8,15 @@ import { CutModal } from "./CutModal";
 
 const CORTES_IMG = "/images/Cortes de carne";
 
+// Posiciones alineadas al referente anatómico (cabeza a la izquierda, cola a la derecha).
 const HOTSPOT_CONFIG: Array<{ id: string; left: number; top: number; cortesKey: string; corteId: string; imagePath: string }> = [
-  { id: "paleta", left: 29, top: 47, cortesKey: "ojoBife", corteId: "ojo-bife", imagePath: `${CORTES_IMG}/06 ojodebife.jpg` },
-  { id: "costillas", left: 41, top: 44, cortesKey: "tomahawk", corteId: "tomahawk", imagePath: `${CORTES_IMG}/04 tomahawk.jpg` },
-  { id: "tomahawk", left: 52, top: 43, cortesKey: "tiraAsado", corteId: "tira-asado", imagePath: `${CORTES_IMG}/02 tira de asado.jpg` },
-  { id: "vacio", left: 40, top: 56, cortesKey: "entrana", corteId: "entrana", imagePath: `${CORTES_IMG}/07 entraña.jpg` },
-  { id: "t-bone", left: 57, top: 36, cortesKey: "bifeChorizo", corteId: "bife-chorizo", imagePath: `${CORTES_IMG}/03 bifechorizo.jpg` },
-  { id: "lomo", left: 66, top: 35, cortesKey: "tbone", corteId: "t-bone", imagePath: `${CORTES_IMG}/05 tbone.jpg` },
-  { id: "vientre", left: 53, top: 63, cortesKey: "lomo", corteId: "lomo", imagePath: `${CORTES_IMG}/01 lomo.jpg` },
+  { id: "ojo-bife", left: 30, top: 40, cortesKey: "ojoBife", corteId: "ojo-bife", imagePath: `${CORTES_IMG}/06 ojodebife.jpg` },
+  { id: "tomahawk", left: 37, top: 36, cortesKey: "tomahawk", corteId: "tomahawk", imagePath: `${CORTES_IMG}/04 tomahawk.jpg` },
+  { id: "bife-chorizo", left: 47, top: 40, cortesKey: "bifeChorizo", corteId: "bife-chorizo", imagePath: `${CORTES_IMG}/03 bifechorizo.jpg` },
+  { id: "t-bone", left: 57, top: 38, cortesKey: "tbone", corteId: "t-bone", imagePath: `${CORTES_IMG}/05 tbone.jpg` },
+  { id: "lomo", left: 65, top: 54, cortesKey: "lomo", corteId: "lomo", imagePath: `${CORTES_IMG}/01 lomo.jpg` },
+  { id: "tira-asado", left: 41, top: 51, cortesKey: "tiraAsado", corteId: "tira-asado", imagePath: `${CORTES_IMG}/02 tira de asado.jpg` },
+  { id: "entrana", left: 39, top: 62, cortesKey: "entrana", corteId: "entrana", imagePath: `${CORTES_IMG}/07 entraña.jpg` },
 ];
 
 export function CowDiagram() {

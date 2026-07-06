@@ -5,6 +5,7 @@ import { useLocale } from "../context/LocaleContext";
 import { SiteHeader } from "../components/SiteHeader";
 import { SiteFooter } from "../components/SiteFooter";
 import { SalonCarousel } from "../components/SalonCarousel";
+import { EVENTOS_EMAIL } from "../lib/site";
 
 const iconSvgClass = "h-10 w-10 shrink-0 sm:h-11 sm:w-11 text-black";
 
@@ -75,7 +76,7 @@ export function EventosContent() {
               {t("eventos.tiposDesc")}
             </p>
             <a
-              href="mailto:eventos@lodejesus.com"
+              href={`mailto:${EVENTOS_EMAIL}`}
               className="mt-6 inline-flex min-h-[48px] items-center justify-center rounded border-2 border-black bg-black px-8 py-3.5 text-btn font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-zinc-800 focus-visible:ring-2 focus-visible:ring-zinc-600 focus-visible:ring-offset-2 sm:mt-8 sm:px-12 sm:py-4"
             >
               {t("eventos.consultanos")}
@@ -100,7 +101,7 @@ export function EventosContent() {
                     {t(`eventos.${id}`)}
                   </h3>
                   <a
-                    href="mailto:eventos@lodejesus.com"
+                    href={`mailto:${EVENTOS_EMAIL}`}
                     className="mt-6 inline-flex w-full min-h-[44px] max-w-[14rem] items-center justify-center rounded border border-black bg-black px-5 py-2.5 text-btn font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-zinc-800 focus-visible:ring-2 focus-visible:ring-zinc-600 focus-visible:ring-offset-2 sm:mt-8"
                   >
                     {t("eventos.masInfo")}

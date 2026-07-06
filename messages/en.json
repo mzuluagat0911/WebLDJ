@@ -61,7 +61,7 @@
     "diagramAlt": "Cuts diagram: tap each area to learn about the cut",
     "diagramAriaPrefix": "View information about",
     "reservaMesa": "Reserve your table",
-    "cortesList": ["Sirloin strip 400 g", "Rib eye 400 g", "Tenderloin 400 g", "Skirt 450 g", "Short ribs 800 g", "Tomahawk 1600 g (to share!)", "T-bone 850 g"]
+    "cortesList": ["Rib eye 400 g", "Tomahawk 1600 g (to share!)", "Sirloin strip 400 g", "T-bone 850 g", "Tenderloin 400 g", "Short ribs 800 g", "Skirt 450 g"]
   },
   "cortesModal": {
     "bifeChorizo": { "nombre": "Sirloin strip", "peso": "400 g", "descripcion": "One of the most in-demand cuts. From the short loin, it stands out for its marbling and intense flavour. Ideal medium-rare to bring out its juiciness." },
@@ -76,11 +76,11 @@
     "pageTitle": "OUR STORY",
     "reserva": "Make a reservation",
     "timeline": {
-      "1953": "Fresh from Spain, Jesús Perna and his wife opened a small grocery store in Palermo. Neighbours, drawn by the cured ham they served at the bar, made this corner a neighbourhood classic.",
-      "2002": "In late 2000, Lo de Jesús closed in its classic format and in 2002 reopened with the aim of keeping the original atmosphere and adding a focus on grilled meats. The clear concept: a meat restaurant with old-school bodegón dishes and an excellent wine cellar.",
+      "1953": "Fresh from Spain, Jesús Pernas and his wife Lola opened a general store in the heart of Palermo. Jesús had a small bar where he served vermouth and sliced cured ham for his visitors—at the time, neighbours, taxi drivers and local mechanics from the neighbourhood.",
+      "2002": "At the end of the 1990s Jesús closed the store and the doors reopened in the early 2000s with a Buenos Aires bodegón concept called \"Lo de Jesús\", in honour of the founder of the corner. The aesthetics of the early 1950s have been preserved to this day.",
       "2008": "Following growing tourism demand and a passion for meat, Lo de Jesús added grilled meats. The bodegón evolved into a quality grill, strengthening its reputation among locals and visitors.",
-      "2016": "La Malbequería was born, Lo de Jesús's wine shop and the first specialised in Malbec. With a diverse, nationwide portfolio, it covers Argentina's wine regions and offers labels from across the country.",
-      "hoy": "Lo de Jesús became a true temple of meat and wine, where around 300 diners a day come in search of an authentic and memorable experience."
+      "2016": "The restaurant opens its own wine shop, La Malbequería, the first specialised in Malbec, with a portfolio of more than 350 labels with a nationwide range, representing all of Argentina's wine regions.",
+      "hoy": "Lo de Jesús became the true TEMPLE OF MEAT AND WINE, where locals and tourists from around the world come in search of an authentic and memorable experience."
     }
   },
   "eventos": {
