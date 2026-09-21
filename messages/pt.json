@@ -61,16 +61,44 @@
     "diagramAlt": "Diagrama de cortes: toque em cada área para conhecer o corte",
     "diagramAriaPrefix": "Ver informação de",
     "reservaMesa": "Reserve sua mesa",
-    "cortesList": ["Olho de bife 400 g", "Tomahawk 1600 g (para compartilhar!)", "Bife de chorizo 400 g", "T-bone 850 g", "Lombo 400 g", "Tira de costela 800 g", "Entranha 450 g"]
+    "cortesList": ["Olho de bife 400 g", "Tomahawk 1000 g", "Bife de chorizo 400 g", "T-bone 850 g", "Lombo 400 g", "Asado do centro 800 g", "Entranha 450 g"]
   },
   "cortesModal": {
-    "bifeChorizo": { "nombre": "Bife de chorizo", "peso": "400 g", "descripcion": "Um dos cortes mais demandados. Da região do lombo baixo, destaca-se pelo marmoreado e sabor intenso. Ideal ao ponto para ressaltar sua suculência." },
-    "ojoBife": { "nombre": "Olho de bife", "peso": "400 g", "descripcion": "Corte conhecido pelo sabor intenso, textura tenra e suculenta. Vem do centro da costela e é cozido nas brasas para ressaltar seu carácter." },
-    "tomahawk": { "nombre": "Tomahawk", "peso": "1600 g (para compartilhar!)", "descripcion": "Costela com osso longo, espetacular na parrilla. Suculento e com o sabor que o osso aporta. Ideal para compartilhar à mesa." },
-    "tiraAsado": { "nombre": "Tira de costela", "peso": "800 g", "descripcion": "Clássico argentino por excelência. Cortada da costela, com sua gordura característica que aporta sabor. Para compartilhar ou desfrutar com generosidade." },
-    "tbone": { "nombre": "T-bone", "peso": "850 g", "descripcion": "Corte com osso em T: de um lado lombo, do outro filé. Duas texturas numa mesma peça. Para quem quer o melhor dos dois mundos." },
-    "lomo": { "nombre": "Lombo", "peso": "400 g", "descripcion": "Corte nobre e magro do lombo alto. Muito tenro e de sabor delicado. Perfeito para quem busca elegância no bocado." },
-    "entrana": { "nombre": "Entranha", "peso": "450 g", "descripcion": "Corte de carácter, do diafragma. Sabor marcado e textura firme. Um favorito dos amantes da parrilla quando feita ao ponto." }
+    "bifeChorizo": {
+      "nombre": "Bife de chorizo / Strip steak",
+      "peso": "400 g",
+      "descripcion": "Localizado na região dorsolombar, lombo alto da vaca. Limita cranialmente com o bife largo e caudalmente com o quadril.\n\nTem forma alongada e ligeiramente cilíndrica.\n\nCom uma camada de gordura externa e veios de gordura intramuscular que aportam sabor e suculência.\n\nMaduramos 21 dias em úmido e servimos porções de 400 g."
+    },
+    "ojoBife": {
+      "nombre": "Olho de bife / Rib eye",
+      "peso": "400 g",
+      "descripcion": "Localizado na região dorsal. Limita cranialmente com a agulha e caudalmente com o bife estreito.\n\nÉ extraído da seção da costela entre as costelas 6 e 12, e se caracteriza pelo marmoreado da gordura intramuscular, mais um manto de gordura no exterior que contribui para sua suculência e sabor.\n\nMaduramos em úmido 21 dias e servimos porções de 400 g."
+    },
+    "tomahawk": {
+      "nombre": "Tomahawk",
+      "peso": "1000 g",
+      "descripcion": "Obtém-se da costela mantendo o osso longo e uma espessura considerável.\n\nTambém é conhecido como corte machado e contém o olho de bife com o asado.\n\nMaduramos 15 dias e cada porção é de 1000 g."
+    },
+    "tiraAsado": {
+      "nombre": "Asado do centro / Bandelita",
+      "peso": "800 g",
+      "descripcion": "Encontra-se no centro do costilhar da vaca, entre a 4ª e a 8ª costela.\n\nO osso é cortado transversalmente em tiras finas.\n\nTem uma excelente proporção de carne e gordura, o que lhe dá um sabor intenso e suculento.\n\nMaduramos em úmido 15 dias e servimos porções de 800 g."
+    },
+    "tbone": {
+      "nombre": "T-bone",
+      "peso": "850 g",
+      "descripcion": "Neste corte pode-se ver o osso em forma de T.\n\nReúne duas peças de carne suculentas: o lombo e o bife estreito.\n\nMaduramos 15 dias e cada porção é de 850 g."
+    },
+    "lomo": {
+      "nombre": "Lombo / Loin",
+      "peso": "400 g",
+      "descripcion": "Localizado na região sublombar, na parte baixa das costas da vaca.\n\nÉ de forma cônica, alongada e achatada.\n\nÉ uma carne tenra e magra, apreciada por sua suavidade e sabor.\n\nMaduramos 21 dias em úmido e servimos porções de 400 g."
+    },
+    "entrana": {
+      "nombre": "Entranha",
+      "peso": "450 g",
+      "descripcion": "Encontra-se no músculo do diafragma da vaca, na parte interna das costelas.\n\nÉ alongada, delgada e retangular, de tom vermelho intenso. Seu sabor é intenso devido ao alto conteúdo de gordura intramuscular.\n\nÉ suculenta e tenra. Maduramos em úmido 21 dias e servimos porções de 450 g."
+    }
   },
   "historia": {
     "pageTitle": "NOSSA HISTÓRIA",

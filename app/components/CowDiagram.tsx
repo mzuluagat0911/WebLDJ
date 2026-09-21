@@ -8,15 +8,15 @@ import { CutModal } from "./CutModal";
 
 const CORTES_IMG = "/images/Cortes de carne";
 
-// Posiciones alineadas al referente anatómico (cabeza a la izquierda, cola a la derecha).
+// Posiciones según el croquis (lomo alto cerca de la oreja → cola; asado/entraña abajo).
 const HOTSPOT_CONFIG: Array<{ id: string; left: number; top: number; cortesKey: string; corteId: string; imagePath: string }> = [
-  { id: "ojo-bife", left: 30, top: 40, cortesKey: "ojoBife", corteId: "ojo-bife", imagePath: `${CORTES_IMG}/06 ojodebife.jpg` },
-  { id: "tomahawk", left: 37, top: 36, cortesKey: "tomahawk", corteId: "tomahawk", imagePath: `${CORTES_IMG}/04 tomahawk.jpg` },
-  { id: "bife-chorizo", left: 47, top: 40, cortesKey: "bifeChorizo", corteId: "bife-chorizo", imagePath: `${CORTES_IMG}/03 bifechorizo.jpg` },
-  { id: "t-bone", left: 57, top: 38, cortesKey: "tbone", corteId: "t-bone", imagePath: `${CORTES_IMG}/05 tbone.jpg` },
-  { id: "lomo", left: 65, top: 54, cortesKey: "lomo", corteId: "lomo", imagePath: `${CORTES_IMG}/01 lomo.jpg` },
-  { id: "tira-asado", left: 41, top: 51, cortesKey: "tiraAsado", corteId: "tira-asado", imagePath: `${CORTES_IMG}/02 tira de asado.jpg` },
-  { id: "entrana", left: 39, top: 62, cortesKey: "entrana", corteId: "entrana", imagePath: `${CORTES_IMG}/07 entraña.jpg` },
+  { id: "ojo-bife", left: 36, top: 18, cortesKey: "ojoBife", corteId: "ojo-bife", imagePath: `${CORTES_IMG}/06 ojodebife.jpg` },
+  { id: "tomahawk", left: 41, top: 20, cortesKey: "tomahawk", corteId: "tomahawk", imagePath: `${CORTES_IMG}/04 tomahawk.jpg` },
+  { id: "bife-chorizo", left: 53, top: 23, cortesKey: "bifeChorizo", corteId: "bife-chorizo", imagePath: `${CORTES_IMG}/03 bifechorizo.jpg` },
+  { id: "t-bone", left: 68, top: 28, cortesKey: "tbone", corteId: "t-bone", imagePath: `${CORTES_IMG}/05 tbone.jpg` },
+  { id: "lomo", left: 72, top: 38, cortesKey: "lomo", corteId: "lomo", imagePath: `${CORTES_IMG}/01 lomo.jpg` },
+  { id: "tira-asado", left: 52, top: 42, cortesKey: "tiraAsado", corteId: "tira-asado", imagePath: `${CORTES_IMG}/02 tira de asado.jpg` },
+  { id: "entrana", left: 58, top: 44, cortesKey: "entrana", corteId: "entrana", imagePath: `${CORTES_IMG}/07 entraña.jpg` },
 ];
 
 export function CowDiagram() {
@@ -41,7 +41,7 @@ export function CowDiagram() {
   return (
     <>
       <div className="relative w-full max-w-[560px] overflow-visible rounded-lg bg-transparent">
-        <div className="relative aspect-[560/480] w-full min-h-[220px] sm:min-h-[280px] lg:min-h-0">
+        <div className="relative aspect-[410/326] w-full min-h-[220px] sm:min-h-[280px] lg:min-h-0">
           <Image
             src="/images/vaca.png"
             alt={t("carnes.diagramAlt")}
@@ -56,11 +56,13 @@ export function CowDiagram() {
                 key={id}
                 type="button"
                 onClick={() => setSelectedCorte(corte)}
-                className="absolute flex h-11 w-11 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-[#6a1613] text-white shadow-md transition hover:scale-110 hover:bg-[#55110f] focus-visible:ring-2 focus-visible:ring-[#6a1613] focus-visible:ring-offset-1 focus-visible:ring-offset-zinc-900 sm:h-8 sm:w-8"
+                className="group absolute flex h-11 w-11 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-transparent transition hover:scale-110 focus-visible:ring-2 focus-visible:ring-[#6a1613] focus-visible:ring-offset-1 focus-visible:ring-offset-zinc-900"
                 style={{ left: `${left}%`, top: `${top}%` }}
                 aria-label={`${t("carnes.diagramAriaPrefix")} ${corte.nombre}`}
               >
-                <span className="text-base font-light leading-none sm:text-base">+</span>
+                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#6a1613] text-white shadow-md transition group-hover:bg-[#55110f] sm:h-7 sm:w-7">
+                  <span className="text-sm font-light leading-none sm:text-base">+</span>
+                </span>
               </button>
             ))}
           </div>

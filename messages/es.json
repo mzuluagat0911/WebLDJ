@@ -61,16 +61,44 @@
     "diagramAlt": "Diagrama de cortes: tocá cada zona para conocer el corte",
     "diagramAriaPrefix": "Ver información de",
     "reservaMesa": "Reservá tu mesa",
-    "cortesList": ["Ojo de bife 400 g", "Tomahawk 1600 g (¡para compartir!)", "Bife de chorizo 400 g", "T-bone 850 g", "Lomo 400 g", "Tira de asado del centro 800 g", "Entraña 450 g"]
+    "cortesList": ["Ojo de bife 400 g", "Tomahawk 1000 g", "Bife de chorizo 400 g", "T-bone 850 g", "Lomo 400 g", "Asado del centro 800 g", "Entraña 450 g"]
   },
   "cortesModal": {
-    "bifeChorizo": { "nombre": "Bife de chorizo", "peso": "400 g", "descripcion": "Uno de los cortes más demandados. De la zona del lomo bajo, destaca por su marmoleado y su sabor intenso. Ideal a punto para realzar su jugosidad." },
-    "ojoBife": { "nombre": "Ojo de bife", "peso": "400 g", "descripcion": "Es un corte conocido por su sabor intenso, su textura tierna y jugosa. Proviene del centro del costillar y se cocina a las brasas para resaltar su carácter." },
-    "tomahawk": { "nombre": "Tomahawk", "peso": "1600 g (¡para compartir!)", "descripcion": "Costilla con hueso largo, espectacular a la parrilla. Jugoso y con el sabor que aporta el hueso. Ideal para compartir en la mesa." },
-    "tiraAsado": { "nombre": "Tira de asado del centro", "peso": "800 g", "descripcion": "Clásico argentino por excelencia. Cortada del costillar, con su característica grasa que aporta sabor. Para compartir o disfrutar con generosidad." },
-    "tbone": { "nombre": "T-bone", "peso": "850 g", "descripcion": "Corte con hueso en T: un lado lomo, el otro solomillo. Dos texturas en una misma pieza. Para los que quieren lo mejor de ambos mundos." },
-    "lomo": { "nombre": "Lomo", "peso": "400 g", "descripcion": "Corte noble y magro del lomo alto. Muy tierno y de sabor delicado. Perfecto para quienes buscan elegancia en el bocado." },
-    "entrana": { "nombre": "Entraña", "peso": "450 g", "descripcion": "Corte de carácter, del diafragma. Sabor marcado y textura firme. Un favorito de los amantes de la parrilla cuando se hace a punto." }
+    "bifeChorizo": {
+      "nombre": "Bife de chorizo / Strip steak",
+      "peso": "400 g",
+      "descripcion": "Ubicado en la región dorsolumbar, lomo alto de la vaca. Limita hacia craneal con el bife ancho y hacia caudal con el cuadril.\n\nTiene forma alargada y ligeramente cilíndrica.\n\nCon una capa de grasa externa y vetas de grasa intramuscular que le aportan sabor y jugosidad.\n\nLo maduramos 21 días en húmedo y servimos porciones de 400 g."
+    },
+    "ojoBife": {
+      "nombre": "Ojo de bife / Rib eye",
+      "peso": "400 g",
+      "descripcion": "Ubicado en la región dorsal. Limita hacia craneal con la aguja y hacia caudal con el bife angosto.\n\nSe extrae de la sección de la costilla entre las costillas 6 y 12, y se caracteriza por su marmoleado proporcionado por la grasa intramuscular, más un manto graso en el exterior que contribuye a su jugosidad y sabor.\n\nLo maduramos en húmedo 21 días y servimos porciones de 400 g."
+    },
+    "tomahawk": {
+      "nombre": "Tomahawk",
+      "peso": "1000 g",
+      "descripcion": "Se obtiene de la costilla manteniendo el hueso largo y un grosor considerable.\n\nSe lo conoce también como corte hacha y contiene al ojo de bife con el asado.\n\nLo maduramos 15 días y cada porción es de 1000 g."
+    },
+    "tiraAsado": {
+      "nombre": "Asado del centro / Bandelita",
+      "peso": "800 g",
+      "descripcion": "Se encuentra en el centro del costillar de la vaca, entre la 4ta y la 8va costilla.\n\nSe corta el hueso transversalmente en tiras finas.\n\nTiene una excelente proporción de carne y grasa, lo que le da un sabor intenso y jugoso.\n\nLo maduramos en húmedo 15 días y servimos porciones de 800 g."
+    },
+    "tbone": {
+      "nombre": "T-bone",
+      "peso": "850 g",
+      "descripcion": "En este corte puede verse el hueso en forma de T.\n\nReúne dos piezas de carne suculentas: el lomo y el bife angosto.\n\nLo maduramos 15 días y cada porción es de 850 g."
+    },
+    "lomo": {
+      "nombre": "Lomo / Loin",
+      "peso": "400 g",
+      "descripcion": "Ubicado en la región sublumbar, en la parte baja de la espalda de la vaca.\n\nEs de forma cónica, alargada y aplanada.\n\nEs una carne tierna y magra, apreciado por su suavidad y sabor.\n\nLo maduramos 21 días en húmedo y servimos porciones de 400 g."
+    },
+    "entrana": {
+      "nombre": "Entraña",
+      "peso": "450 g",
+      "descripcion": "Se encuentra en el músculo del diafragma de la vaca, en la parte interna de las costillas.\n\nEs alargada, delgada y rectangular de tono rojo fuerte. Su sabor es intenso debido a su alto contenido de grasa intramuscular.\n\nEs jugosa y tierna. La maduramos en húmedo 21 días y servimos porciones de 450 g."
+    }
   },
   "historia": {
     "pageTitle": "NUESTRA HISTORIA",

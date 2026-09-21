@@ -4,7 +4,7 @@ import { useLocale } from "../context/LocaleContext";
 import type { Locale } from "../context/LocaleContext";
 
 const LOCALES: { locale: Locale; flag: string; label: string }[] = [
-  { locale: "es", flag: "🇪🇸", label: "Español" },
+  { locale: "es", flag: "🇦🇷", label: "Español" },
   { locale: "pt", flag: "🇧🇷", label: "Português" },
   { locale: "en", flag: "🇺🇸", label: "English" },
 ];

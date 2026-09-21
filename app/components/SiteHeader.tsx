@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { useLocale, type Locale } from "../context/LocaleContext";
+import { DELIVERY_URL } from "../lib/site";
 
 type SiteHeaderProps = {
   variant?: "default" | "overHero";
@@ -22,7 +23,7 @@ export function SiteHeader({ variant = "default" }: SiteHeaderProps) {
     { href: "/prensa", label: t("nav.prensa") },
   ];
   const locales: Array<{ code: Locale; label: string; flag: string }> = [
-    { code: "es", label: "ES", flag: "🇪🇸" },
+    { code: "es", label: "ES", flag: "🇦🇷" },
     { code: "en", label: "EN", flag: "🇬🇧" },
     { code: "pt", label: "PT", flag: "🇧🇷" },
   ];
@@ -75,12 +76,14 @@ export function SiteHeader({ variant = "default" }: SiteHeaderProps) {
             {isMobileMenuOpen ? t("nav.close") : t("nav.menuLabel")}
           </button>
           <div className="hidden items-center gap-2 lg:flex">
-            <button
-              type="button"
+            <a
+              href={DELIVERY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex min-h-[40px] min-w-[6.75rem] items-center justify-center rounded bg-[#6a1613] px-4 text-[11px] font-semibold uppercase tracking-[0.14em] text-white transition hover:bg-[#55110f] xl:min-w-[7.25rem] xl:text-xs"
             >
               {t("nav.delivery")}
-            </button>
+            </a>
             <div className="flex items-center gap-1 rounded border border-white/20 px-1.5 py-1">
               {locales.map((item) => (
                 <button
@@ -113,9 +116,15 @@ export function SiteHeader({ variant = "default" }: SiteHeaderProps) {
                 {link.label}
               </Link>
             ))}
-            <button className="mt-2 rounded bg-[#6a1613] px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-[#55110f]">
+            <a
+              href={DELIVERY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 rounded bg-[#6a1613] px-6 py-2.5 text-center text-xs font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-[#55110f]"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
               {t("nav.delivery")}
-            </button>
+            </a>
             <div className="mt-2 flex items-center justify-center gap-2 border-t border-white/10 pt-3">
               {locales.map((item) => (
                 <button

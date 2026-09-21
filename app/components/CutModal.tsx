@@ -84,7 +84,7 @@ export function CutModal({ corte, onClose }: CutModalProps) {
           {corte.peso && (
             <p className="mt-1 text-btn font-medium text-[#6a1613]">{corte.peso}</p>
           )}
-          <p className="mt-3 text-body leading-relaxed text-white/90">
+          <p className="mt-3 whitespace-pre-line text-body leading-relaxed text-white/90">
             {corte.descripcion}
           </p>
         </div>

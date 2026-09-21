@@ -61,16 +61,44 @@
     "diagramAlt": "Cuts diagram: tap each area to learn about the cut",
     "diagramAriaPrefix": "View information about",
     "reservaMesa": "Reserve your table",
-    "cortesList": ["Rib eye 400 g", "Tomahawk 1600 g (to share!)", "Sirloin strip 400 g", "T-bone 850 g", "Tenderloin 400 g", "Short ribs 800 g", "Skirt 450 g"]
+    "cortesList": ["Rib eye 400 g", "Tomahawk 1000 g", "Strip steak 400 g", "T-bone 850 g", "Loin 400 g", "Short ribs 800 g", "Skirt 450 g"]
   },
   "cortesModal": {
-    "bifeChorizo": { "nombre": "Sirloin strip", "peso": "400 g", "descripcion": "One of the most in-demand cuts. From the short loin, it stands out for its marbling and intense flavour. Ideal medium-rare to bring out its juiciness." },
-    "ojoBife": { "nombre": "Rib eye", "peso": "400 g", "descripcion": "A cut known for its intense flavour, tender and juicy texture. From the centre of the rib, it is cooked on the grill to bring out its character." },
-    "tomahawk": { "nombre": "Tomahawk", "peso": "1600 g (to share!)", "descripcion": "Long-bone rib, spectacular on the grill. Juicy with the flavour the bone adds. Ideal to share at the table." },
-    "tiraAsado": { "nombre": "Short ribs", "peso": "800 g", "descripcion": "The Argentine classic. Cut from the rib with its characteristic fat for flavour. To share or enjoy generously." },
-    "tbone": { "nombre": "T-bone", "peso": "850 g", "descripcion": "Cut with a T-shaped bone: one side strip, the other tenderloin. Two textures in one piece. For those who want the best of both worlds." },
-    "lomo": { "nombre": "Tenderloin", "peso": "400 g", "descripcion": "Noble, lean cut from the short loin. Very tender and delicate in flavour. Perfect for those seeking elegance in every bite." },
-    "entrana": { "nombre": "Skirt", "peso": "450 g", "descripcion": "A cut with character, from the diaphragm. Bold flavour and firm texture. A favourite among grill lovers when cooked to medium." }
+    "bifeChorizo": {
+      "nombre": "Strip steak / Bife de chorizo",
+      "peso": "400 g",
+      "descripcion": "Located in the dorsolumbar region, the upper loin of the cow. It borders cranially with the wide steak and caudally with the rump.\n\nIt has an elongated, slightly cylindrical shape.\n\nWith an outer layer of fat and intramuscular fat flecks that bring flavour and juiciness.\n\nWe wet-age it for 21 days and serve 400 g portions."
+    },
+    "ojoBife": {
+      "nombre": "Rib eye / Ojo de bife",
+      "peso": "400 g",
+      "descripcion": "Located in the dorsal region. It borders cranially with the chuck and caudally with the strip loin.\n\nIt is taken from the rib section between ribs 6 and 12, and is characterised by its marbling from intramuscular fat, plus an outer fat cap that contributes to its juiciness and flavour.\n\nWe wet-age it for 21 days and serve 400 g portions."
+    },
+    "tomahawk": {
+      "nombre": "Tomahawk",
+      "peso": "1000 g",
+      "descripcion": "Taken from the rib while keeping the long bone and considerable thickness.\n\nAlso known as the axe cut, it contains the rib eye with the short rib.\n\nWe age it for 15 days and each portion is 1000 g."
+    },
+    "tiraAsado": {
+      "nombre": "Short ribs / Bandelita",
+      "peso": "800 g",
+      "descripcion": "Found in the centre of the cow's rib cage, between the 4th and 8th ribs.\n\nThe bone is cut transversely into thin strips.\n\nIt has an excellent meat-to-fat ratio, giving it an intense, juicy flavour.\n\nWe wet-age it for 15 days and serve 800 g portions."
+    },
+    "tbone": {
+      "nombre": "T-bone",
+      "peso": "850 g",
+      "descripcion": "In this cut you can see the T-shaped bone.\n\nIt brings together two succulent pieces of meat: the tenderloin and the strip loin.\n\nWe age it for 15 days and each portion is 850 g."
+    },
+    "lomo": {
+      "nombre": "Loin / Lomo",
+      "peso": "400 g",
+      "descripcion": "Located in the sublumbar region, on the lower part of the cow's back.\n\nIt is conical, elongated and flattened in shape.\n\nIt is a tender, lean cut, prized for its softness and flavour.\n\nWe wet-age it for 21 days and serve 400 g portions."
+    },
+    "entrana": {
+      "nombre": "Skirt / Entraña",
+      "peso": "450 g",
+      "descripcion": "Found in the diaphragm muscle of the cow, on the inner side of the ribs.\n\nIt is elongated, thin and rectangular with a deep red colour. Its flavour is intense thanks to its high intramuscular fat content.\n\nIt is juicy and tender. We wet-age it for 21 days and serve 450 g portions."
+    }
   },
   "historia": {
     "pageTitle": "OUR STORY",
