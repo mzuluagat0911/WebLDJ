@@ -7,25 +7,13 @@ import { SiteFooter } from "../components/SiteFooter";
 import { SalonCarousel } from "../components/SalonCarousel";
 import { EVENTOS_EMAIL } from "../lib/site";
 
-const iconSvgClass = "h-10 w-10 shrink-0 sm:h-11 sm:w-11 text-black";
-
 const TIPOS_IDS = ["jornadas", "degustacion", "almuerzos", "cocktail"] as const;
-const ICONOS = [
-  <svg key="j" className={iconSvgClass} viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-    <path d="M8 4.25A2.25 2.25 0 0 1 10.25 2h3.5A2.25 2.25 0 0 1 16 4.25V6h2.75A2.25 2.25 0 0 1 21 8.25v10.5A2.25 2.25 0 0 1 18.75 21h-13.5A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H8V4.25Zm1.5 0V6h5V4.25a.75.75 0 0 0-.75-.75h-3.5a.75.75 0 0 0-.75.75Z" />
-  </svg>,
-  <svg key="d" className={iconSvgClass} viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-    <path d="M7 4.5a.75.75 0 0 1 .75-.75h8.5a.75.75 0 0 1 .72.96l-1.7 5.7a3 3 0 0 1-2.87 2.14h-.65v5.2h3.2a.75.75 0 0 1 0 1.5H8.85a.75.75 0 0 1 0-1.5h3.1v-5.2h-.5a3 3 0 0 1-2.88-2.14l-1.7-5.7A.75.75 0 0 1 7 4.5Z" />
-  </svg>,
-  <svg key="a" className={iconSvgClass} viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-    <path d="M6 2.5a.75.75 0 0 1 .75.75v5.1a2.5 2.5 0 1 0 5 0v-5.1a.75.75 0 0 1 1.5 0v5.1a4 4 0 0 1-2.5 3.72V21a.75.75 0 0 1-1.5 0v-8.93a4 4 0 0 1-4-3.72v-5.1A.75.75 0 0 1 6 2.5Zm9.25-.25a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-7.25h-1.75a.75.75 0 0 1-.75-.75V3a.75.75 0 0 1 .75-.75h2.5Z" />
-  </svg>,
-  <svg key="c" className={iconSvgClass} viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-    <path d="M4.75 4h14.5a.75.75 0 0 1 .53 1.28L13 12.06v4.69h2.75a.75.75 0 0 1 0 1.5h-7.5a.75.75 0 0 1 0-1.5H11v-4.69L4.22 5.28A.75.75 0 0 1 4.75 4Z" />
-    <path d="M17.2 4.35a.75.75 0 0 1 1.06 0l1.35 1.35a.75.75 0 0 1-1.06 1.06L17.2 5.41a.75.75 0 0 1 0-1.06Z" />
-    <circle cx="20.25" cy="8.8" r="1.15" />
-  </svg>,
-];
+const TIPOS_ICONS: Record<(typeof TIPOS_IDS)[number], string> = {
+  jornadas: "/images/Eventos/icons/jornadas.png",
+  degustacion: "/images/Eventos/icons/degustacion.png",
+  almuerzos: "/images/Eventos/icons/almuerzos.png",
+  cocktail: "/images/Eventos/icons/cocktail.png",
+};
 
 const EVENTOS_IMG = "/images/Eventos";
 
@@ -87,14 +75,20 @@ export function EventosContent() {
         <section className="border-t border-zinc-200 bg-zinc-50/50 py-12 sm:py-20 lg:py-24">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:max-w-7xl lg:px-10">
             <div className="grid grid-cols-1 gap-y-8 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-4 lg:gap-x-5 lg:gap-y-0">
-              {TIPOS_IDS.map((id, i) => (
+              {TIPOS_IDS.map((id) => (
                 <div
                   key={id}
                   className="flex h-full w-full min-w-0 flex-col items-center rounded-xl bg-white p-6 text-center shadow-sm ring-1 ring-zinc-200/80 sm:rounded-2xl sm:p-7 lg:p-6"
                 >
                   <div className="flex h-16 w-full min-h-16 items-center justify-center sm:min-h-[4.5rem]">
-                    <div className="flex h-14 w-14 items-center justify-center sm:h-16 sm:w-16" aria-hidden>
-                      {ICONOS[i]}
+                    <div className="relative h-14 w-14 sm:h-16 sm:w-16" aria-hidden>
+                      <Image
+                        src={TIPOS_ICONS[id]}
+                        alt=""
+                        fill
+                        className="object-contain"
+                        sizes="64px"
+                      />
                     </div>
                   </div>
                   <h3 className="mt-4 w-full text-pretty text-btn font-semibold uppercase leading-snug tracking-[0.15em] text-black">

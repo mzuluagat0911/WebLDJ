@@ -3,32 +3,97 @@
 import { useLocale } from "../context/LocaleContext";
 import { SiteHeader } from "../components/SiteHeader";
 import { SiteFooter } from "../components/SiteFooter";
+import { ReviewsCarousel, type Review } from "../components/ReviewsCarousel";
+import { GOOGLE_REVIEWS_URL } from "../lib/site";
 
 const PRENSA_LINKS: { medio: string; url: string }[] = [
-  { medio: "EL CRONISTA", url: "https://www.cronista.com/contenido-patrocinado/la-malbequeria-dos-imperdibles-citas-con-el-vino-en-palermo/" },
-  { medio: "LA NACIÓN", url: "https://www.lanacion.com.ar/sabado/un-clasico-de-palermo-de-1953-el-almacen-de-barrio-que-se-transformo-en-el-templo-de-la-carne-y-el-nid05122025/" },
-  { medio: "ELLE", url: "https://elle.clarin.com/estilo-de-vida/gourmet/malbec-vino-malbequeria_0_rGf7i8Yfyz.html" },
+  {
+    medio: "EL CRONISTA",
+    url: "https://www.cronista.com/contenido-patrocinado/lo-de-jesus-delivery-el-fenomeno-gastronomico-que-transformo-el-delivery-en-una-experiencia-premium/",
+  },
+  {
+    medio: "PERFIL",
+    url: "https://www.perfil.com/noticias/empresas-y-protagonistas/palermo-brinda-al-atardecer-la-experiencia-que-reune-mas-de-100-malbec-en-una-noche-unica.phtml",
+  },
+  {
+    medio: "CUISINE",
+    url: "https://cuisine.com.ar/lo-de-jesus-en-tu-casa-el-delivery-premium-que-apuesta-por-los-clasicos/",
+  },
+  {
+    medio: "LA NACIÓN",
+    url: "https://www.lanacion.com.ar/sabado/un-clasico-de-palermo-de-1953-el-almacen-de-barrio-que-se-transformo-en-el-templo-de-la-carne-y-el-nid05122025/",
+  },
+  {
+    medio: "NOTICIAS",
+    url: "https://noticias.perfil.com/noticias/vida-gourmet/vino-y-gastronomia-las-ferias-que-llegan-a-palermo.phtml",
+  },
+  {
+    medio: "LA VOZ",
+    url: "https://www.lavoz.com.ar/voy-de-viaje/argentina/el-invierno-se-disfruta-en-lo-de-jesus-la-parrilla-y-bodegon-para-sentirse-en-casa/",
+  },
+  {
+    medio: "CLARÍN",
+    url: "https://www.clarin.com/informacion-general/1953-clasico-restaurante-palermo-ahora-descuentos-imperdibles-30-famosa-parrilla_0_O3aNLVpU7G.html",
+  },
+  {
+    medio: "TIME OUT",
+    url: "https://www.timeout.com/es/buenos-aires/lo-de-jesus-dario-gualtieri-parrilla-restaurant-palermo-carne-brasas",
+  },
 ];
 
-const CITAS_KEYS = ["cita1", "cita2", "cita3"] as const;
+const CITAS_KEYS = ["cita1", "cita2", "cita3", "cita4", "cita5", "cita6", "cita7", "cita8"] as const;
 
-const TESTIMONIOS = [
-  { nombre: "Lizandro Rodriguez" },
-  { nombre: "María Fernández" },
-  { nombre: "Carlos Méndez" },
+const RESEÑAS: Review[] = [
+  {
+    nombre: "Valeria Martins",
+    estrellas: 5,
+    color: "#8B5E3C",
+    texto:
+      "Excelente cena vivimos el sábado 5 de septiembre, Emiliano nos recibió sin reserva y éramos 10, algo muy difícil de lograr un sábado a la noche. Nos ubicó en seguida y con muy buena onda! Los mozos Maxi y Javier unos genios. Entradas increíbles, asado y pastas muy ricos. Sin duda recomendados y volveremos!",
+  },
+  {
+    nombre: "Katherine Quant",
+    estrellas: 4,
+    color: "#4A5568",
+    texto:
+      "Nos atendieron súper rápido y nos colocaron en una mesa que pedimos. Pedimos dos cortes de carnes para tres y fue suficiente. Las empanadas estaban ok, pero los postres estaban deliciosos!",
+  },
+  {
+    nombre: "Alejandra Ortiz",
+    estrellas: 5,
+    color: "#6B4E71",
+    texto:
+      "Excelente servicio de Viviana. Comimos provoleta, entraña y vino. El pan de la casa, delicioso.",
+  },
+  {
+    nombre: "Jenny Aoun Miguel",
+    estrellas: 5,
+    color: "#2F4F4F",
+    texto:
+      "From the moment we walked in, the experience at Lo de Jesús was outstanding. Charlie’s attention was exceptional—warm, attentive, and genuinely welcoming. We started with freshly baked bread straight out of the oven, followed by a perfectly prepared provoleta.",
+  },
+  {
+    nombre: "Lucas Biglia",
+    estrellas: 5,
+    color: "#2E7D32",
+    texto:
+      "Todo en el lugar es un 10. Desde el momento de la recepción hasta que te vas. La amabilidad del mozo me sorprendió gratamente. Pocas veces me atendieron tan bien. Totalmente recomendado.",
+  },
+  {
+    nombre: "Violeta Galvez",
+    estrellas: 5,
+    color: "#6a1613",
+    texto:
+      "El lugar que elegimos siempre! Excelente calidad de comida y servicio! La calidez del personal es muy linda, siempre te hacen sentir especial. Hoy nos atiende Jonathan y lo estamos pasando genial!",
+  },
+  {
+    nombre: "Tamara Mendoza",
+    estrellas: 5,
+    color: "#5C4033",
+    texto:
+      "Fuimos a cenar con amigas y la experiencia fue increíble. La carne estaba en su punto justo (muy recomendada la entraña y el asado) y las entradas como las mollejitas y la provoleta son imperdibles. Servicio impecable. ¡Súper recomendado!",
+  },
 ];
-
-function Estrellas({ n }: { n: number }) {
-  return (
-    <div className="flex justify-center gap-0.5" aria-hidden>
-      {Array.from({ length: n }).map((_, i) => (
-        <svg key={i} className="h-5 w-5 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
-          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-        </svg>
-      ))}
-    </div>
-  );
-}
 
 export function PrensaContent() {
   const { t } = useLocale();
@@ -73,22 +138,8 @@ export function PrensaContent() {
               {t("prensa.comensalesTitle")}
             </h2>
 
-            <div className="mx-auto mt-8 grid max-w-5xl gap-6 sm:mt-12 sm:grid-cols-3 sm:gap-8 lg:mt-16 lg:gap-10">
-              {TESTIMONIOS.map((test) => (
-                <article
-                  key={test.nombre}
-                  className="flex flex-col items-center rounded-xl bg-white p-5 text-center shadow-sm sm:rounded-2xl sm:p-6 lg:p-8"
-                >
-                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-zinc-200 text-lg font-semibold text-zinc-600 sm:h-16 sm:w-16">
-                    {test.nombre.split(" ").map((s) => s[0]).join("")}
-                  </div>
-                  <p className="mt-4 font-semibold text-black">{test.nombre}</p>
-                  <Estrellas n={5} />
-                  <p className="mt-4 text-body leading-relaxed text-zinc-700">
-                    {t("prensa.testimonio")}
-                  </p>
-                </article>
-              ))}
+            <div className="mt-8 sm:mt-12 lg:mt-16">
+              <ReviewsCarousel reviews={RESEÑAS} />
             </div>
 
             <div className="mt-10 text-center sm:mt-14 lg:mt-16">
@@ -96,7 +147,9 @@ export function PrensaContent() {
                 {t("prensa.opinion")}
               </p>
               <a
-                href="#"
+                href={GOOGLE_REVIEWS_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-4 inline-flex min-h-[48px] items-center justify-center rounded bg-black px-8 py-3.5 text-btn font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-zinc-800 focus-visible:ring-2 focus-visible:ring-zinc-600 focus-visible:ring-offset-2 sm:mt-5 sm:px-12 sm:py-4"
               >
                 {t("prensa.escribirResena")}
